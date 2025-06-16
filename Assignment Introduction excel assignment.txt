@@ -1,0 +1,245 @@
+Module 2) Introduction to Excel - Assignment
+
+QUSETION 1 )			
+	Category	Name	Weight
+	Light Weight	A	43
+	Light Weight	B	59
+	Light Weight	C	72
+	Medium Weight	D	119
+	Medium Weight	E	175
+	Medium Weight	F	192
+	Heavy Weight	G	240
+	Heavy Weight	H	405
+	Heavy Weight	I	522
+			
+	Use only Average function for the following excercises		
+			
+1	Average Weight of "Light Weight" category		
+			
+2	Average Weight of "Medium Weight" category		
+			
+3	Average Weight of "Heavey Weight" category		
+			
+4	Average for all categories 		
+			
+			
+Answer			
+1 Answer	Average Weight of "Light Weight" category   is     58  ( =AVERAGE(D4:D6)_		
+2.Answer	Average Weight of "Medium Weight" category  is     162	(=AVERAGE(D7:D9))	
+3.Answer	Average Weight of "Heavey Weight" category  is     389	(=AVERAGE(D10:D12))	
+4.Answer	Average for all categories  is 		           203   (=AVERAGE(D4:D12))
+
+Question 2)
+
+The Table below contains percipitation measurments as measured in the Rochester NY area last year.		
+We sampled 3 days in each of the first three months of 2018:		
+Sample	Month	Rainfall (mm)
+Sample 1	Jan-18	152
+Sample 2	Jan-18	171
+Sample 3	Jan-18	110
+Sample 4	Feb-18	173
+Sample 5	Feb-18	128
+Sample 6	Feb-18	107
+Sample 7	Mar-18	213
+Sample 8	Mar-18	238
+Sample 9	Mar-18	131
+		
+What was the average precipitation for each month?		
+		
+Jan-18		
+Feb-18		
+Mar-18		
+		
+		
+Now, calculate the average of the following numbers only with formulas SUM and COUNT (don't use Average formula)		
+		
+What is the average of all of the samples?		
+Now get the same result with Average function		
+		
+"Question 2) The excel file named Average 3, the table below contains precipitation
+measurement as measured in the Rochester NY area last year and we
+sampled 3 days in each of the first three months of 2018. Complete all
+the question in the file given."		
+		
+Answers are below		
+1. Answer) Jan - 18 average  		
+For Sum		
+433		
+For Count		
+3		
+Average = Sum / Count		
+144.3333333		
+		
+2.Answer) Fab-18 average		
+For Sum		
+408		
+For Count		
+3		
+Average = Sum / Count		
+136		
+		
+3.Answer) March-18 average		
+For Sum		
+582		
+For Count		
+3		
+Average = Sum / Count		
+194		
+		
+4) What is the average of all of the samples?		
+For Sum		
+1423		
+For Count		
+9		
+Average = Sum / Count		
+158.1111111		
+		
+5) Now get the same result with Average function		
+158.1111111		
+
+Question 3) count 1
+
+The table below shows survey responses; the respondents could use any value for their answers.	
+How many times do you eat breakfast in a week?	
+Name:	Answer
+Avery	7
+Ron	5
+Avi	6
+Ravi	4
+Ricky	Three
+Nate	I don't know 
+David	David
+	
+Solve by using COUNT and COUNTA formulas, and use only column B (Grey) to answer the questions:	
+	
+Question	How many numerical (with numbers only) responses are in the range?
+Answer - when we use count formula only numerical value counts. Answer of count is 4.	4
+	
+Question	How many responses in total are in the range?
+Answer - for total range we use countA formula, answer is 7	7
+
+Question 4)Count 2
+
+The following table represents a bank statement of ExcelMaster company.		
+Column E shows the total dollar value amount of each of the  accounts.		
+Account Number	Currency	Amount
+101	USD - United States	78,022.00
+102	£ - United Kingdom	99,819.00
+103	Wine - Japan	Error
+104	Euro - EMU	27,522.00
+105	Dollar - Australia	0
+106	USD - Canada	
+107	Crown - Denmark	0
+108	Crown - Norway	88,041.00
+109	Rand - South Africa	81,831.00
+110	Crown - Sweden	Error
+111	Frank - Switzerland	
+112	Diner - Jordan banknotes	26,624.00
+113	Pound - Lebanese bills	92,885.00
+114	Pound - Egyptian banknotes	0
+		
+Answer by using functions COUNT and COUNTA		
+Question	How many numerical answers appear in column C - Amount?	
+Answer - We can use only count formula for get answer. Answer is 10	10
+
+Formula =COUNT(C4:C17)	
+		
+	COUNT returns the number of cells with a number.	
+		
+		
+Question	How many non-blank answers (numbers and letters) appear in column C?	
+Answer - We can use CountA formula answer is 12	
+
+Formula = COUNTA(C4:C17)
+
+Question 5) Count 3
+
+	Answer using the following range:
+	
+	
+	Orange
+	4
+	
+	3
+	
+	L
+	
+	#DIV/0!
+	AAA
+	Apple1234
+	
+	Solve by using formulas COUNT, COUNTA and COUNTBLANK:
+	
+1	How many cells with a number value are in the grey range (cells B3 to B13)?
+ANSWER IS 2 (FORMULA IS  COUNT(B3:B13)	
+	2
+	
+2	How many empty cells are in the grey range?
+Aneswe is 4  ( COUNTBLANK(B3:B13))	
+4	
+3	How many non number cells are in  the grey range?
+Answer is 9 (Formula is ROWS(B3:B13) - COUNT(B3:B13)	
+9	
+4	How many cells in total are in the range?
+Answer is 11	
+Formula is ( ROWS(B3:B13)	
+	11
+
+Question 7) Hlookup
+
+7) In excel file named HLOOKUP, solve all the question using
+HLOOKUP only
+
+
+											
+	Data										
+	Employee ID	101	102	103	104	105	106	107	108	109	110
+	Employee Name	John Doe	Jane Smith	Bob Johnson	Sarah Lee	Tom Davis	Emily Brown	Michael Wilson	Jessica Davis	David Martin	Rachel Green
+	Department	HR	Marketing	IT	Finance	HR	Marketing	IT	Finance	HR	Marketing
+	Salary	50000	55000	60000	65000	70000	75000	80000	85000	90000	95000
+	Bonus	2000	2500	3000	3500	4000	4500	5000	5500	6000	6500
+	Total Pay	52000	57500	63000	685000	74000	79500	85000	90500	96000	101500
+											
+1	What is the department of employee with ID 102?										
+											
+	Enter function here: Formula(HLOOKUP(D3,B3:K5,3,FALSE))	Marketing	Formula(HLOOKUP(D3,B3:K5,3,FALSE)) ->	Marketing							
+											
+2	What is the salary of employee with ID 105?										
+											
+	Enter function here: Formula (HLOOKUP(G3,B3:L6,4,FALSE)	70000	HLOOKUP(G3,B3:L6,4,FALSE)	           ->      70000							
+											
+											
+3	What is the total pay of employee with ID 107? 										
+	Enter function here: Formula (HLOOKUP(I3,B3:L8,6,FALSE))	85000	Formula (HLOOKUP(I3,B3:L8,6,FALSE))  =>	  85000							
+
+
+Question 8) IF 1	
+
+Table A contains names and their respective grades for Excel 101 Course			
+Complete column C using only IF formula			
+Grade 60 or higher = Pass			
+Grade less than 60 = Fail			
+			
+Name	Grade	Pass/Fail	Formula
+Adi	98	Pass	IF(B7>=60,"Pass","Fail")
+Beni	55	Fail	IF(B8>=60,"Pass","Fail")
+Charlie	15	Fail	IF(B9>=60,"Pass","Fail")
+Dani	60	Pass	IF(B10>=60,"Pass","Fail")
+
+
+Question 8) IF 2
+
+
+The following table is an extract from an accounting system that contains four journal entries				
+Check if column A's cells match column B's cell				
+if they match - return "match", otherwise return "no match"				
+				
+	A	B		
+	Debit	Credit	Same value?	Formula
+Journal Entry 1	$94.00 	$94.00 	match	IF(B7=C7,"match","not match")
+Journal Entry 2	$109.00 	$109.00 	match	IF(B8=C8,"match","not match")
+Journal Entry 3	$85.00 	$85.50 	not match	IF(B9=C9,"match","not match")
+Journal Entry 4	$12.00 	$12.00 	match	IF(B10=C10,"match","not match")
+
+
+
