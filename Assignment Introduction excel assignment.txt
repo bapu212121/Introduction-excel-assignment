@@ -1,6 +1,10 @@
 Module 2) Introduction to Excel - Assignment
 
-QUSETION 1 )			
+QUSETION 1 )
+ Use the average function and calculate the average of all the three
+category of weight. (for this question use excel file named average 1).
+
+
 	Category	Name	Weight
 	Light Weight	A	43
 	Light Weight	B	59
@@ -14,13 +18,14 @@ QUSETION 1 )
 			
 	Use only Average function for the following excercises		
 			
-1	Average Weight of "Light Weight" category		
+1	Average Weight of "Light Weight" category		58
 			
-2	Average Weight of "Medium Weight" category		
+2	Average Weight of "Medium Weight" category		162
 			
-3	Average Weight of "Heavey Weight" category		
+3	Average Weight of "Heavey Weight" category		389
 			
-4	Average for all categories 		
+4	Average for all categories 		203
+		
 			
 			
 Answer			
@@ -227,19 +232,638 @@ Charlie	15	Fail	IF(B9>=60,"Pass","Fail")
 Dani	60	Pass	IF(B10>=60,"Pass","Fail")
 
 
-Question 8) IF 2
+Question 9) IF 2
 
+The following table is an extract from an accounting system that contains four journal entries
+Check if column A's cells match column B's cell
+if they match - return "match", otherwise return "no match"
 
-The following table is an extract from an accounting system that contains four journal entries				
-Check if column A's cells match column B's cell				
-if they match - return "match", otherwise return "no match"				
-				
-	A	B		
 	Debit	Credit	Same value?	Formula
 Journal Entry 1	$94.00 	$94.00 	match	IF(B7=C7,"match","not match")
 Journal Entry 2	$109.00 	$109.00 	match	IF(B8=C8,"match","not match")
 Journal Entry 3	$85.00 	$85.50 	not match	IF(B9=C9,"match","not match")
 Journal Entry 4	$12.00 	$12.00 	match	IF(B10=C10,"match","not match")
 
+Question 9) IF 3
+In excel file named IF 3, The table below contains details of high school
+student’s names and ages, use IF formula to complete columns D and
+E.If the student's age is 16 or above, he/she is eligible for a driver's
+license. Check if they are eligible or not. Answer in column D.
 
+	"	The table below contains details of high school students names and ages, use IF formula to complete columns D and E"						
+1	If the student's age is 16 or above, he/she is eligible for a driver's license. Check if they are eligible or not. Answer in column D						
+							
+2	If the student is younger than 18 years old he/she is a minor. Check whether the student is a minor or not. for Minor return "Minor" and non minor = "Adult" anwswer in column E						
+
+Answer
+
+Number	Name	Age	Driver Licence	Minor/Adult?	Eligible for the ddriving licence formula	Formula for minor / adult
+1	Arik	16	Eligible	Minor	IF(D9>=16,"Eligible","Non-eligible")	(D9>18,"Adult","Minor")
+2	Ben	18	Eligible	Minor	IF(D10>=16,"Eligible","Non-eligible")	IF(D10>18,"Adult","Minor")
+3	Cermit	15.5	Non-eligible	Minor	IF(D11>=16,"Eligible","Non-eligible")	IF(D11>18,"Adult","Minor")
+4	Dan	19	Eligible	Adult	IF(D12>=16,"Eligible","Non-eligible")	IF(D12>18,"Adult","Minor")
+5	Eliko	18	Eligible	Minor	IF(D13>=16,"Eligible","Non-eligible")	IF(D13>18,"Adult","Minor")
+6	Fage	13	Non-eligible	Minor	IF(D14>=16,"Eligible","Non-eligible")	IF(D14>18,"Adult","Minor")
+7	George	18	Eligible	Minor	IF(D15>=16,"Eligible","Non-eligible")	IF(D15>18,"Adult","Minor")
+8	Herzl	17	Eligible	Minor	IF(D16>=16,"Eligible","Non-eligible")	IF(D16>18,"Adult","Minor")
+
+12) In excel file named IF 4, An A+ student gets 100% scholarship and non
+A+ gets 50% scholarship, the following table contains the names of
+students from 2024 class. Use IF function to calculate the scholarships'
+amounts each of them will get.
+
+An A+ student gets 100% scholarship and non A+ gets 50% scholarship as shown in the table below:				
+				
+	Amount			
+A+	100%			
+A-	50%			
+
+The following table contains the names of students from 2024 class.				
+Use IF function to calculate the scholarships' amounts each of them will get				
+
+Name	GPA	Tuition	Scholarship	Formula use
+Sam	A+	 46,866 	46,866	IF(B11="A+",C11*100%,C11*50%)
+Ari	A-	 33,495 	16,748	IF(B12="A+",C11*100%,C11*50%)
+Xena	A-	 35,087 	17,544	IF(B13="A+",C11*100%,C11*50%)
+Gabe	A+	 42,603 	42,603	IF(B14="A+",C11*100%,C11*50%)
+Eliko	A-	 36,971 	18,486	IF(B15="A+",C11*100%,C11*50%)
+Daniela	A+	 41,286 	41,286	IF(B16="A+",C11*100%,C11*50%)
+Rotem	A-	 37,732 	18,866	IF(B17="A+",C11*100%,C11*50%)
+
+13) In excel file named Math 1, Use the following guidelines to
+calculate the statements given the file.
+
+In this module, we will focus on learning  how to make basic arithmetic operations using excel							
+Use the following guidelines to calculate the statements below:							
+=	equals, use = sign before the formula to calculate a formula						
++	plus						
+-	minus						
+/	divide						
+*	multiply						
+%	percentage sign (will divide the number by 100 if added after a value)						
+
+					
+Arithmertics					Formula
+2	Plus	3	5		(3+2)
+3	Minus	1	2		(3-1)
+5	Times	10	50		(5 * 10)
+10	Divided by	2	5		(10/2)
+					
+					
+Percentages using division of numbers					
+10	Out of	100	10.00%		
+3	Out of	6	50%		
+1.5	Out of	1	150%		
+					
+Calculate percentage of change					
+Stock	Price 2015	Price 2016	Year over Year % change		Formula
+Stock A	100	150	50%		(150-100)/100
+Stock B	100	50	-50%		(50-100)/100
+
+14) In excel file named MAX MIN 1, Use max, min and average
+formulas to answer all the following questions given in the file.
+
+	MAX, MIN and Average			
+	Sumo wrestlers contest - Names and Weights			
+1	Use max, min and average formulas to answer the following questions.			
+	Name	Weight		
+	Ishaymoto	200		
+	Solomoto	120		
+	Greenko	        156		
+	Dinamito	190		
+	Shlomtzi	320		
+	Oveidyudo	89		
+				Formula
+1.1	What is the maximum weight of a wrestler?	320		MAX(C5:C10)
+1.2	What is the minimum weight of a wrestler?	89		MIN(C5:C10)
+1.3	What is the average between the maximum and the minimum? (mid range)	204.5		AVERAGE(C12,C13)
+				
+				
+15) In the file named MAX MIN 2, The following table contains details
+about the scores of 4 students in a driving theory test. If a student fails at
+least one test - she or he needs to retake the course. Use IF and
+MAX/MIN to check if a student passed the test.
+
+The following table contains details about the scores of 4 students in a driving theory test. If a student fails at least one test - she or he needs to retake the course.							
+							
+Use IF and MAX/MIN to check if a student passed the test							
+1. if the lowest score is lower than 50 - return "fail"							
+2. else - return "pass"							
+							
+	Test 1	Test 2	Test 3	Test 4		Formula	
+Johnny	95	56	14	66	Fail	IF(MIN(C8:F8)<50, "Fail", "Pass")	
+Georgy	54	89	53	66	Pass	IF(MIN(C9:F9)<50, "Fail", "Pass")	
+Ofri	100	69	78	53	Pass	IF(MIN(C10:F10)<50, "Fail", "Pass")	
+Dani	49	70	87	100	Fail	IF(MIN(C11:F11)<50, "Fail", "Pass")	
+
+16) In the file named MAX MIN 3, IF at least one student got 99 points or
+more in a test - the test considered easy, Use MAX and IF to create a
+logic that checks if the test was "Easy" or not.
+
+IF at least one student got 99 points or more in a test - the test considered easy, 			
+Use MAX and IF to create a logic that checks if the test was "Easy" or not			
+			
+	Test 1	Answer	Formula
+Johny	95	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Georgy	54	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Ofri	100	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Dani	49	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Lev	67	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Yoav	45	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+Chen	77	Easy	IF(MAX($C$5:$C$11)>=99,"Easy","Not easy")
+
+17) In the file named Nested IF 1, The school decided to use the following
+grade system:
+a. Grade higher or equal to 80 - Excellent
+b. Grade higher or equal to 60 but lower than 80 – Good
+c. Grade lower than 60 - Failed Complete all the task given in
+the file.
+Answer
+The school decided to use the following grade system:			
+Grade higher or equal to 80 - Excellent			
+Grade higher or equal to 60 but lower than 80 - Good			
+Grade lower than 60 - Failed			
+			
+Complete the following:			
+			
+Student name	Grade	Failed/Good/Excellent	Formula
+John	78	Good	IF(B9>=80,"Excellent",IF(B9>=60,"Good","Fail"))
+Sarah	85	Excellent	IF(B10>=80,"Excellent",IF(B10>=60,"Good","Fail"))
+Michael	44	Fail	IF(B11>=80,"Excellent",IF(B11>=60,"Good","Fail"))
+Deborah	61	Good	IF(B12>=80,"Excellent",IF(B12>=60,"Good","Fail"))
+
+18) In the file named SUM 1, The following table includes ABC
+company's revenue by month. The company's CFO asked you to use
+SUM formula to calculate the total revenue for the year.
+
+Answer.
+
+The following table includes ABC company's revenue by month.			
+The company's CFO asked you to use SUM formula to calculate the total revenue for the year.			
+			
+			
+Month	Revenue in $MM		
+January	 759 		
+February	 200 		
+March	 42 		
+April	 423 		
+May	 200 		
+June	 50 		
+July	 700 		
+August	 450 		
+September	 605 		
+October	 240 		
+November	 685 		
+December	 295 		
+Total Year	 4,649 	<<Enter value here	
+			
+			
+Formula	SUM((B6:B17)		
+
+19) In the file named SUM 2, The following table represents daily costs
+by
+Answer
+
+The following table represents daily costs by day for the first quarter of 2015		
+Calculate the total costs at the bottom of the table. Hint: to save time, use sum shortcuts.		
+Answer : Press  ALT + =		
+Date	 Costs 	
+01-01-2015	 $432.17 	
+13-12-2015	 $528.50 	
+03-01-2015	 $810.71 	
+04-01-2015	 $418.54 	
+05-01-2015	 $722.22 	
+06-01-2015	 $460.28 	
+11-12-2015	 $483.58 	
+08-01-2015	 $114.53 	
+09-01-2015	 $609.12 	
+10-01-2015	 $1,197.90 	
+11-01-2015	 $228.89 	
+12-01-2015	 $1,380.07 	
+13-01-2015	 $1,026.96 	
+14-01-2015	 $760.24 	
+15-01-2015	 $414.11 	
+16-01-2015	 $1,728.81 	
+17-01-2015	 $276.06 	
+18-01-2015	 $462.22 	
+19-01-2015	 $1,281.10 	
+20-01-2015	 $1,113.70 	
+21-01-2015	 $594.09 	
+22-01-2015	 $432.67 	
+23-01-2015	 $874.45 	
+24-01-2015	 $880.38 	
+25-01-2015	 $798.53 	
+10-11-2015	 $572.42 	
+27-01-2015	 $330.61 	
+28-01-2015	 $567.18 	
+29-01-2015	 $1,449.21 	
+30-01-2015	 $459.29 	
+31-01-2015	 $357.55 	
+01-02-2015	 $154.34 	
+02-02-2015	 $152.76 	
+03-02-2015	 $570.22 	
+04-02-2015	 $987.62 	
+05-02-2015	 $1,755.71 	
+06-02-2015	 $378.27 	
+07-02-2015	 $1,323.81 	
+08-02-2015	 $399.02 	
+09-02-2015	 $154.95 	
+10-02-2015	 $1,254.57 	
+11-02-2015	 $627.32 	
+14-08-2015	 $880.60 	
+13-02-2015	 $1,196.03 	
+14-02-2015	 $782.32 	
+15-02-2015	 $1,323.35 	
+16-02-2015	 $209.92 	
+17-02-2015	 $1,232.05 	
+18-02-2015	 $713.28 	
+19-02-2015	 $1,674.82 	
+20-02-2015	 $1,161.25 	
+21-02-2015	 $897.63 	
+22-02-2015	 $1,647.26 	
+23-02-2015	 $1,121.96 	
+24-02-2015	 $352.20 	
+25-02-2015	 $270.78 	
+26-02-2015	 $456.41 	
+27-02-2015	 $441.00 	
+28-02-2015	 $252.44 	
+01-03-2015	 $1,298.92 	
+02-03-2015	 $1,178.07 	
+03-03-2015	 $459.95 	
+04-03-2015	 $1,219.70 	
+05-03-2015	 $152.24 	
+06-03-2015	 $770.80 	
+07-03-2015	 $1,357.25 	
+02-07-2015	 $220.18 	
+09-03-2015	 $1,102.81 	
+10-03-2015	 $1,566.83 	
+11-03-2015	 $437.92 	
+12-03-2015	 $1,216.12 	
+13-03-2015	 $273.10 	
+14-03-2015	 $242.26 	
+15-03-2015	 $1,512.60 	
+16-03-2015	 $783.75 	
+04-07-2015	 $667.99 	
+18-03-2015	 $1,166.31 	
+19-03-2015	 $770.18 	
+20-03-2015	 $132.34 	
+21-03-2015	 $1,188.81 	
+22-03-2015	 $198.06 	
+23-03-2015	 $594.17 	
+24-03-2015	 $931.09 	
+25-03-2015	 $299.64 	
+07-08-2015	 $1,701.68 	
+27-03-2015	 $399.15 	
+28-03-2015	 $374.81 	
+29-03-2015	 $462.17 	
+30-03-2015	 $924.29 	
+31-03-2015	 $5,000.60 	
+	 $72,741.77 	<<Enter value here
+		
+Answer : press ALT + = 		
+
+21) In the file named SUM 3, Find the number of residents for each of the
+following groups from the table below, complete all the question in
+the file.
+Answer.
+1	Find the number of residents for each of the following groups from the table below:							
+								
+	Age group	0-19						
+	Number of residents	99,498						
+								
+	Age group	25-49						
+	Number of residents	2,11,409						
+								
+	Age group	50-75+						
+	Number of residents	1,27,820						
+								
+2	What is the total number of residents in region 3 (green) for all group ages?							
+		5,124						
+								
+3	What is the total number of users in regions 1-20 for all groups?					region 1-20 total user for age group 0-19	region 1-20 total user for age group 25-49	region 1-20 total user for age group 50-75+
+		89,884				23,997	36,777	29,110
+								
+4	Total number of residents of ages 0-19 and 50-75+							
+	Option 1:	99,498						
+	Option 2:	1,27,820						
+	Total	2,27,318						
+								
+			Age group					
+	City	Region	0-19	25-49	50-75+			
+	Tel Aviv	Region 1	3,419	4,378	2,755			
+	Tel Aviv	Region 2	1,492	2,126	2,103			
+	Tel Aviv	Region 3	1,371	1,930	1,823			
+	Tel Aviv	Region 4	1,607	2,133	2,102			
+	Tel Aviv	Region 5	951	1,445	1,416			
+	Tel Aviv	Region 6	889	1,293	1,526			
+	Tel Aviv	Region 7	1,254	1,989	1,685			
+	Tel Aviv	Region 8	1,025	1,362	2,077			
+	Tel Aviv	Region 9	1,194	2,016	1,452			
+	Tel Aviv	Region 10	607	853	1,022			
+	Tel Aviv	Region 11	626	1,569	1,033			
+	Tel Aviv	Region 12	1,037	2,300	1,598			
+	Tel Aviv	Region 13	972	2,128	912			
+	Tel Aviv	Region 14	88	1,159	0			
+	Tel Aviv	Region 15	2,052	2,159	1,582			
+	Tel Aviv	Region 16	1,582	2,308	1,699			
+	Tel Aviv	Region 17	1,088	1,218	981			
+	Tel Aviv	Region 18	706	1,151	1,145			
+	Tel Aviv	Region 19	1,335	2,098	1,322			
+	Tel Aviv	Region 20	702	1,162	877			
+	Tel Aviv	Region 21	968	1,101	797			
+	Tel Aviv	Region 22	1,664	2,069	1,710			
+	Tel Aviv	Region 23	624	770	746			
+	Tel Aviv	Region 24	685	1,501	1,126			
+	Tel Aviv	Region 25	1,248	1,763	1,146			
+	Tel Aviv	Region 26	1,342	1,559	1,307			
+	Tel Aviv	Region 27	760	965	921			
+	Tel Aviv	Region 28	1,187	1,568	1,190			
+	Tel Aviv	Region 29	0	0	277			
+	Tel Aviv	Region 30	368	1,386	637			
+	Tel Aviv	Region 31	317	1,215	478			
+	Tel Aviv	Region 32	689	2,544	1,009			
+	Tel Aviv	Region 33	510	2,583	861			
+	Tel Aviv	Region 34	257	1,023	446			
+	Tel Aviv	Region 35	335	1,225	520			
+	Tel Aviv	Region 36	264	957	405			
+	Tel Aviv	Region 37	285	869	434			
+	Tel Aviv	Region 38	550	2,502	822			
+	Tel Aviv	Region 39	266	1,382	501			
+	Tel Aviv	Region 40	598	2,107	1,002			
+	Tel Aviv	Region 41	344	1,641	765			
+	Tel Aviv	Region 42	183	867	384			
+	Tel Aviv	Region 43	302	1,326	586			
+	Tel Aviv	Region 44	177	823	548			
+	Tel Aviv	Region 45	285	1,249	533			
+	Tel Aviv	Region 46	236	1,162	402			
+	Tel Aviv	Region 47	293	1,016	585			
+	Tel Aviv	Region 48	242	1,363	428			
+	Tel Aviv	Region 49	248	1,398	476			
+	Tel Aviv	Region 50	292	1,380	456			
+	Tel Aviv	Region 51	196	1,238	493			
+	Tel Aviv	Region 52	432	1,216	552			
+	Tel Aviv	Region 53	420	1,581	525			
+	Tel Aviv	Region 54	398	1,759	682			
+	Tel Aviv	Region 55	128	791	242			
+	Tel Aviv	Region 56	225	935	432			
+	Tel Aviv	Region 57	1,358	2,231	1,391			
+	Tel Aviv	Region 58	1,345	1,791	1,460			
+	Tel Aviv	Region 59	769	1,948	1,011			
+	Tel Aviv	Region 60	560	1,835	642			
+	Tel Aviv	Region 61	836	2,245	861			
+	Tel Aviv	Region 62	587	1,471	623			
+	Tel Aviv	Region 63	774	1,403	1,085			
+	Tel Aviv	Region 64	757	1,203	1,175			
+	Tel Aviv	Region 65	591	1,439	858			
+	Tel Aviv	Region 66	457	1,161	594			
+	Tel Aviv	Region 67	494	1,585	705			
+	Tel Aviv	Region 68	914	1,727	1,308			
+	Tel Aviv	Region 69	581	1,448	885			
+	Tel Aviv	Region 70	31	0	78			
+	Tel Aviv	Region 71	92	233	494			
+	Tel Aviv	Region 72	486	1,176	400			
+	Tel Aviv	Region 73	440	874	803			
+	Tel Aviv	Region 74	127	695	440			
+	Tel Aviv	Region 75	257	1,367	544			
+	Tel Aviv	Region 76	399	1,238	622			
+	Tel Aviv	Region 77	470	1,609	662			
+	Tel Aviv	Region 78	651	2,120	824			
+	Tel Aviv	Region 79	757	2,498	846			
+	Tel Aviv	Region 80	526	1,902	743			
+	Tel Aviv	Region 81	196	994	477			
+	Tel Aviv	Region 82	260	1,010	575			
+	Tel Aviv	Region 83	192	899	369			
+	Tel Aviv	Region 84	177	284	174			
+	Tel Aviv	Region 85	741	1,781	1,028			
+	Tel Aviv	Region 86	174	773	237			
+	Tel Aviv	Region 87	94	769	228			
+	Tel Aviv	Region 88	197	837	434			
+	Tel Aviv	Region 89	318	1,120	444			
+	Tel Aviv	Region 90	82	723	204			
+	Tel Aviv	Region 91	206	550	229			
+	Tel Aviv	Region 92	390	1,297	456			
+	Tel Aviv	Region 93	111	1,160	282			
+	Tel Aviv	Region 94	522	1,667	556			
+	Tel Aviv	Region 95	278	1,091	505			
+	Tel Aviv	Region 96	0	0	0			
+	Tel Aviv	Region 97	120	1,335	289			
+	Tel Aviv	Region 98	316	1,028	505			
+	Tel Aviv	Region 99	446	1,763	527			
+	Tel Aviv	Region 100	0	0	0			
+	Tel Aviv	Region 101	254	642	308			
+	Tel Aviv	Region 102	157	440	436			
+	Tel Aviv	Region 103	788	988	673			
+	Tel Aviv	Region 104	398	454	333			
+	Tel Aviv	Region 105	796	912	687			
+	Tel Aviv	Region 106	633	1,349	564			
+	Tel Aviv	Region 107	1,018	1,622	826			
+	Tel Aviv	Region 108	356	429	621			
+	Tel Aviv	Region 109	1,173	1,342	605			
+	Tel Aviv	Region 110	729	1,085	838			
+	Tel Aviv	Region 111	935	1,436	1,237			
+	Tel Aviv	Region 112	930	1,328	1,024			
+	Tel Aviv	Region 113	1,207	1,863	1,375			
+	Tel Aviv	Region 114	1,089	1,554	945			
+	Tel Aviv	Region 115	1,179	1,541	1,136			
+	Tel Aviv	Region 116	646	1,144	1,027			
+	Tel Aviv	Region 117	689	1,352	777			
+	Tel Aviv	Region 118	92	1,393	295			
+	Tel Aviv	Region 119	361	4,109	761			
+	Tel Aviv	Region 120	148	1,510	300			
+	Tel Aviv	Region 121	367	1,942	817			
+	Tel Aviv	Region 122	96	249	191			
+	Tel Aviv	Region 123	104	281	241			
+	Tel Aviv	Region 124	152	225	215			
+	Tel Aviv	Region 125	661	1,509	818			
+	Tel Aviv	Region 126	417	591	414			
+	Tel Aviv	Region 127	588	1,036	725			
+	Tel Aviv	Region 128	99	566	200			
+	Tel Aviv	Region 129	1,113	1,539	1,209			
+	Tel Aviv	Region 130	1,462	1,993	1,444			
+	Tel Aviv	Region 131	1,094	1,924	1,466			
+	Tel Aviv	Region 132	924	1,799	1,269			
+	Tel Aviv	Region 133	0	0	0			
+	Tel Aviv	Region 134	296	443	157			
+	Tel Aviv	Region 135	858	1,562	832			
+	Tel Aviv	Region 136	487	821	556			
+	Tel Aviv	Region 137	985	2,100	1,402			
+	Tel Aviv	Region 138	430	976	616			
+	Tel Aviv	Region 139	11	4	351			
+	Tel Aviv	Region 140	370	480	398			
+	Tel Aviv	Region 141	778	1,343	1,071			
+	Tel Aviv	Region 142	783	1,429	1,018			
+	Tel Aviv	Region 143	1,376	2,314	1,440			
+	Tel Aviv	Region 144	717	1,732	1,623			
+	Tel Aviv	Region 145	301	720	629			
+	Tel Aviv	Region 146	179	303	258			
+	Tel Aviv	Region 147	919	1,445	1,250			
+	Tel Aviv	Region 148	396	704	712			
+	Tel Aviv	Region 149	387	735	677			
+	Tel Aviv	Region 150	869	1,267	801			
+	Tel Aviv	Region 151	1,500	2,104	1,570			
+	Tel Aviv	Region 152	1,064	1,509	1,126			
+	Tel Aviv	Region 153	1,272	2,058	1,702			
+	Tel Aviv	Region 154	916	1,326	840			
+	Tel Aviv	Region 155	877	1,498	1,274			
+	Tel Aviv	Region 156	716	1,119	837			
+	Tel Aviv	Region 157	772	1,410	1,199			
+	Tel Aviv	Region 158	1,190	1,969	1,597			
+
+22) In the file named SUMIF 1, answer all the question given in the file.
+
+	Client #	Balance	VIP Account?	Total commisions					
+	1	 8,000 	Yes	10					
+	2	 11,000 	Yes	9					
+	3	 6,000 	No	5					
+	4	 15,000 	Yes	10					
+	5	 10,000 	No	2					
+	6	 15,000 	Yes	5					
+	7	 13,000 	Yes	999					
+	8	 8,000 	Yes	2					
+	9	 11,000 	No	5					
+	10	 9,000 	Yes	6					
+									
+									
+	SUMIF								Formula
+1	What is the total amout of money in VIP Accounts?						79000		SUMIF(D2:D11,"Yes",C2:C11)
+2	What is the total amout of money in Non-VIP Accounts?						27000		SUMIF(D2:D11,"NO",C2:C11)
+									
+3	What is the total amount of commisions from accounts that are over $10,000?						1028		SUMIF(C2:C11,">10000",E2:E11)
+									
+4	What is the total amout of money in accounts over $10,000?						65000		SUMIF(C2:C11,">10000",C2:C11)
+5	What is the total amout of money in accounts under $9,500?						31000		SUMIF(C2:C11,"<9500",C2:C11)
+
+23) In the file named SUMIF 2, answer all the question given in the file
+based on table.
+
+Answer
+	Data - SUMIF									
+	Name	Sport	Country	Medals Won						
+	Michael Phelps	Swimming	USA	28						
+	Usain Bolt	Athletics	Jamaica	8						
+	Simone Biles	Gymnastics	USA	19						
+	Katarina Witt	Figure Skating	Germany	2						
+	Nadia Comaneci	Gymnastics	Romania	5						
+	Carl Lewis	Athletics	USA	9						
+	Larisa Latynina	Gymnastics	USSR	18						
+	Mark Spitz	Swimming	USA	11						
+	Sonja Henie	Figure Skating	Norway	3						
+	Yelena Isinbayeva	Athletics	Russia	15						
+										
+	Questions			See Answers Tab						
+										
+1	What is the total number of medals won by athletes from USA?									
+		Result:								
+	Enter function here:	67								
+										
+2	What is the total number of medals won by figure skaters?									
+		Result:								
+	Enter function here:	5								
+										
+2	What is the total number of medals won by both USA and Jamaica? (Hard)									
+		Result:								
+	Enter function here:	75								
+										
+24) In the file named VLOOKUP APPROXIMATE MATCH, Retrieve
+the GBP: USD exchange rate for the following dates using VLOOKUP
+function, from the table in columns G-H. In case there is no exchange
+rate for a certain date entry, return the the last known rate for that day.
+
+Retrieve the GBP:USD exchange rate for the following dates using VLOOKUP function, from the table in columns G-H.							
+In case there is no exchange rate for a certain date entry, return the the last known rate for that day.							
+							
+						GBP:USD Exchange rates:	
+							
+						                                   Date	        Exchange Rate                             
+Date	Exchange Rate	Formula				                        01-01-2021	 $1.3671                       
+05-01-2021	1.3624	VLOOKUP(A8,G6:H27,2,TRUE)				04-01-2021	 $1.3569 
+15-01-2021	1.3586	VLOOKUP(A9,G7:H27,2,TRUE)				05-01-2021	 $1.3624 
+24-01-2021	1.3684	VLOOKUP(A10,G7:H27,2,TRUE)				06-01-2021	 $1.3607 
+						                                07-01-2021	 $1.3563 
+						                                08-01-2021	 $1.3563 
+						                                11-01-2021	 $1.3514 
+						                                12-01-2021	 $1.3663 
+						                                13-01-2021	 $1.3637 
+						                                14-01-2021	 $1.3687 
+						                                15-01-2021	 $1.3586 
+						                                18-01-2021	 $1.3584                              
+						                                19-01-2021	 $1.3628 
+						                                20-01-2021	 $1.3653 
+						                                21-01-2021	 $1.3732 
+						                                22-01-2021	 $1.3684 
+						                                25-01-2021	 $1.3674 
+						                                26-01-2021	 $1.3733 
+						                                27-01-2021	 $1.3686 
+						                                28-01-2021	 $1.3718 
+						                                29-01-2021	 $1.3702 
+
+
+25) In the file named VLOOKUP 1, Below is a list of the employees who work in your company: Answer all the question given in the file using
+vlookup function.
+
+Below is a list of the employees who work in your company:				
+				
+Employee ID	Name	Location	Salary	Age
+56815	Garry Manship	Hong Kong	13836	25
+51186	William Johnson	Berlin	11771	32
+51511	Thomas Bettle	Bangkok	13046	35
+50890	Ian Nash	Cairo	18276	32
+53700	Margaret Turley	Shanghai	19327	26
+55879	Michael Kaye	Capetown	18996	35
+59848	Paul Bell	Bangkok	10387	25
+58369	Thomas Davies	Capetown	12566	37
+50217	Eric Green	Warsaw	16406	42
+50695	Williamr Black	Cairo	15784	43
+59673	Estelle Cormack	Hong Kong	10959	30
+52130	Christopher Fallon	Delhi	14562	32
+				
+What is the name of Employee ID 58369?			Thomas Davies	VLOOKUP(B11,B4:C15,2,FALSE)
+				
+What's the age of Estelle Cormack?			30	VLOOKUP(C14,C4:F15,4,FALSE)
+				
+Return the Location of the following employees:				
+				
+Employee ID	Location			
+55879	Capetown	VLOOKUP(B9,B3:D15,3,FALSE)		
+50217	Warsaw	VLOOKUP(B25,B4:D15,3,FALSE)		
+50695	Cairo	VLOOKUP(B26,B4:D15,3,FALSE)		
+				
+Find the Salary of the following employees:				
+				
+Name	Salary			
+Ian Nash	18276	VLOOKUP(B31,C4:E15,3,FALSE)		
+Johnny Slash	#N/A	VLOOKUP(B32,C4:E15,3,FALSE)		
+Estelle Cormack	10959	VLOOKUP(B33,C4:E15,3,FALSE)		
+
+26) In the file named VLOOKUP 2a, according to the table, answer all
+the question given in the file using vlookup.
+
+	VLOOKUP Exercise - Data:									
+	Name	Age	Gender	Occupation						
+	John Smith	35	Male	Software Eng						
+	Jane Doe	42	Female	Data Scientist						
+	Bob Johnson	28	Male	Accountant						
+	Emily Chen	25	Female	HR						
+	Sam Lee	31	Male	Marketing						
+	Alice Kim	27	Female	Sales						
+	Yoav Ishay	38	Male	Lawyer						
+	Sue Kim	29	Female	Doctor						
+	Mike Lee	45	Male	CEO						
+	Lily Chen	33	Female	Engineer						
+										
+										
+	Questions									
+						s				
+1	Create a VLOOKUP formula to find the occupation of Jane Doe.									
+		Result:								
+	Enter function here:	Data Scientist		VLOOKUP(B4,B3:E12,4,FALSE)						
+										
+2	Create a VLOOKUP formula to find the age of Mike Lee.									
+		Result:								
+	Enter function here:	45		VLOOKUP(B11,B3:C12,2,FALSE)						
+										
+2	Create a VLOOKUP formula to find the occupation of a person whose name starts with "B" (Challenging!)									
+		Result:								
+	Enter function here:	Bob Johnson		VLOOKUP("B*", B3:E12,1,FALSE)						
+										
 
